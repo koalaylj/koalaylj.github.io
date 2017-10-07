@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>spine pixi mesh</title>
-		<script src="lib/pixi.js"></script>
-		<script src="lib/pixi-spine.js"></script>
+		<script src="../lib/pixi.js"></script>
+		<script src="../lib/pixi-spine.js"></script>
 
 	</head>
 	<body>
@@ -15,7 +15,7 @@
 		var stage = new PIXI.Container();
 
 		PIXI.loader
-		.add('punch', 'assets/punchBagGame.json')
+		.add('punch', '../assets/punchBagGame.json')
 		.load(onAssetsLoaded);
 
 		stage.interactive = true;

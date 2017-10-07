@@ -4,8 +4,8 @@
 <head>
     <title>Phaser Spine Mesh</title>
 
-    <script src="lib/phaser.js"></script>
-    <script src="lib/phaser-spine.js"></script>
+    <script src="../lib/phaser.js"></script>
+    <script src="../lib/phaser-spine.js"></script>
 
     <style>
         body {
@@ -33,7 +33,7 @@
             game.plugins.add(Fabrique.Plugins.Spine);
             game.stage.disableVisibilityChange = true;
 
-            game.load.spine('punch', "assets/punchBagGame.json");
+            game.load.spine('punch', "../assets/punchBagGame.json");
         }
 
         function create() {
