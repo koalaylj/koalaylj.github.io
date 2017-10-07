@@ -1,13 +1,14 @@
 于小懒
 ----------------------------
 
-#### demon.
+#### sugar.
 * [iPhone 分辨率](blog/iphone-resolutions.html)
+* [bitmap-font-for-phaser](bitmapfont/phaser/index.html)
 
 ### spine关于mesh动画的bug
-* pixi下正常：[spine-pixi](spine/phaser/mesh.html)
+* [issue](https://github.com/orange-games/phaser-spine/issues/28)
+* pixi下正常：[spine-pixi](spine/pixi/mesh.html)
 * phaser下有bug：[spine-phaser](spine/phaser/mesh.html)
-
 
 #### dragonbones关于mesh动画的bug
 * phaser中骨骼动画正常：[dragonbones-phaser](dragonbones/phaser/swordsman.html)
