@@ -36,3 +36,5 @@
 ----
 ![heap-sort-example](./assets/heap-sort-animation.gif)
 
+### 参考资料
+[和教材比较接近的解释](http://www.cnblogs.com/mengdd/archive/2012/11/30/2796845.html)
