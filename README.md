@@ -16,5 +16,5 @@
 
 #### dragonbones SDK 修改。
 * 龙骨官方正常例子：[官方](db-phaser-official/index.html)
-* 我把phaser东西抽取出来，没修改时间东西，只改了工厂初始化：[我的](b-phaser-me/tutorial/index.html)
+* 我把phaser东西抽取出来，没修改时间东西，只改了工厂初始化：[我的](db-phaser-me/tutorial/index.html)
 
