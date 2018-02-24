@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>DragonBones Demo</title>
+
+    <script src="./lib/phaser.js"></script>
+    <script src="./lib/dragonBones.js"></script>
+    <!-- <script src="../dist/phaser-ce.db.js"></script> -->
+
+    <script src="../src/PhaserTextureData.js"></script>
+    <script src="../src/PhaserTextureAtlasData.js"></script>
+    <script src="../src/PhaserSlot.js"></script>
+    <script src="../src/PhaserArmatureDisplay.js"></script>
+    <script src="../src/PhaserFactory.js"></script>
+
+    <script src="./js/DragHelper.js"></script>
+    <script src="./js/BaseDemo.js"></script>
+    <script src="./js/HelloDragonBones.js"></script>
+    <script src="./js/AnimationBase.js"></script>
+    <script src="./js/DragonBonesEvent.js"></script>
+    <script src="./js/AnimationLayer.js"></script>
+    <script src="./js/BoneOffset.js"></script>
+    <script src="./js/InverseKinematics.js"></script>
+    <script src="./js/BoundingBox.js"></script>
+    <script src="./js/ReplaceSlotDisplay.js"></script>
+    <!-- <script src="./js/ReplaceSkin.js"></script> -->
+    <script src="./js/ReplaceAnimation.js"></script>
+    <script src="./js/CoreElement.js"></script>
+    <script src="./js/PerformanceTest.js"></script>
+</head>
+
+<body>
+    <script>
+        var factory;
+
+        function create() {
+            factory = new dragonBones.PhaserFactory(this.game);
+
+            this.world.add(new HelloDragonBones(this.game, factory));
+            // this.world.add(new AnimationBase(this.game));
+            // this.world.add(new DragonBonesEvent(this.game));
+            // this.world.add(new AnimationLayer(this.game));
+            // this.world.add(new BoneOffset(this.game));
+            // this.world.add(new InverseKinematics(this.game));
+            // this.world.add(new BoundingBox(this.game));
+            // this.world.add(new ReplaceSlotDisplay(this.game));
+            // this.world.add(new ReplaceSkin(this.game)); TODO
+            // this.world.add(new ReplaceAnimation(this.game));
+            // this.world.add(new coreElement.Game(this.game));
+            // this.world.add(new PerformanceTest(this.game));
+        }
+
+        function render() {
+            factory._dragonBones.advanceTime(-1.0); // update.
+        }
+
+        var game = new Phaser.Game(1136, 640, Phaser.AUTO, null, {
+            create: create,
+            render: render
+        });
+    </script>
+</body>
+
+</html>
