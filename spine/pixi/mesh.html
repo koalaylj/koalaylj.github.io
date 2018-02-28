@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>spine pixi mesh</title>
-		<script src="../lib/pixi.js"></script>
-		<script src="../lib/pixi-spine.js"></script>
 
-	</head>
-	<body>
-		<script type="text/javascript">
-		var renderer = PIXI.autoDetectRenderer(1280, 760);
+<head>
+	<meta charset="utf-8">
+	<title>spine pixi mesh</title>
+	<script src="../lib/pixi.js"></script>
+	<script src="../lib/pixi-spine.js"></script>
+
+</head>
+
+<body>
+	<script type="text/javascript">
+		// var renderer = PIXI.autoDetectRenderer(1280, 760);
+		var renderer =new PIXI.CanvasRenderer(1280, 760);
 		document.body.appendChild(renderer.view);
 
 		var stage = new PIXI.Container();
 
 		PIXI.loader
-		.add('punch', '../assets/punchBagGame.json')
-		.load(onAssetsLoaded);
+			.add('punch', '../assets/punchBagGame.json')
+			.load(onAssetsLoaded);
 
 		stage.interactive = true;
 
@@ -31,7 +34,7 @@
 
 			stage.addChild(punch);
 
-			stage.on('click', function() {
+			stage.on('click', function () {
 				punch.state.setAnimation(0, 'hitBag', false);
 			});
 		}
@@ -39,10 +42,10 @@
 		requestAnimationFrame(animate);
 
 		function animate() {
-		requestAnimationFrame(animate);
-		renderer.render(stage);
+			requestAnimationFrame(animate);
+			renderer.render(stage);
 		}
+	</script>
+</body>
 
-		</script>
-	</body>
 </html>
